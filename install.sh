@@ -34,7 +34,7 @@ brew tap homebrew/cask-fonts && brew install --cask font-fira-code-nerd-font
 
 # Install Utils
 brew install wget htop ncdu hyperfine
-brew install --cask visual-studio-code gitkraken iterm2
+brew install --cask visual-studio-code gitkraken iterm2 phpstorm tableplus
 
 # Install PHP
 brew install php@7.4 php@8.0 php@8.1
