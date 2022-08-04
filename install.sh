@@ -16,6 +16,7 @@ cp "zsh/zprofile.zsh" "$HOME/.zprofile"
 
 # Install Starship
 brew install starship
+cp "starship.toml" "$HOME/.config/starship.toml"
 
 # Install PNPM, NPM, YARN
 brew install pnpm npm yarn
@@ -28,9 +29,12 @@ source "$HOME/.zshrc"
 # Setup default NPM
 nvm install --lts
 
+# Install fonts
+brew tap homebrew/cask-fonts && brew install --cask font-fira-code-nerd-font
+
 # Install Utils
 brew install wget htop ncdu hyperfine
-brew install --cask visual-studio-code gitkraken
+brew install --cask visual-studio-code gitkraken iterm2
 
 # Install PHP
 brew install php@7.4 php@8.0 php@8.1
