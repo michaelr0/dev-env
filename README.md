@@ -17,7 +17,7 @@
 - Install iTerm2
 - Install [Laravel Installer](https://laravel.com/docs/8.x#the-laravel-installer), [Statamic CLI](https://statamic.dev/installing/local#install-statamic)
 - Install [WP-CLI](https://wp-cli.org/)
-- Install [PHP-CS-Fixer](https://github.com/FriendsOfPHP/PHP-CS-Fixer)
+- Install [PHP-CS-Fixer](https://github.com/FriendsOfPHP/PHP-CS-Fixer) and provide `phpfmt` as a CLI helper to automatically use these [defaults](https://github.com/michaelr0/dev-env/blob/main/php-cs-fixer.dist.php)
 - Install [Laravel Valet](https://laravel.com/docs/9.x/valet)
 - Install [Docker Desktop](https://www.docker.com/products/docker-desktop/)
 - Install MariaDB
@@ -25,6 +25,8 @@
 - Create Sites directory in Users Home folder
 - Install [phpMyAdmin](https://phpmyadmin.test/)
 - Install [MailHog](http://localhost:8025/)
+- Provide CLI helpers for [PHP-CS-Fixer](https://github.com/FriendsOfPHP/PHP-CS-Fixer) as phpfmt, [PHPUnit](https://phpunit.readthedocs.io/en/9.5/) and [Laravel Sail](https://laravel.com/docs/9.x/sail)
+- Provide PHP-CS-Fixer [defaults](https://github.com/michaelr0/dev-env/blob/main/php-cs-fixer.dist.php) which are a modified [PSR12](https://cs.symfony.com/doc/ruleSets/PSR12.html) ruleset
 
 ## Installation
 
