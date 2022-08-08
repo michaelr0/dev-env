@@ -1,3 +1,8 @@
+# dev-env update
+function devenv-update() {
+    zsh -c "cd $HOME/dev-env && git pull"
+}
+
 # php-cs-fixer fix command with config automatically applied
 function phpfmt() {
     if [ -x "vendor/bin/php-cs-fixer" ]; then
