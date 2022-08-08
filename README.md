@@ -40,6 +40,21 @@ cd "$HOME/dev-env"
 ./install.sh
 ```
 
+### Docker Desktop
+#### Install Helper
+Click `ok` then enter your password and click `Install Helper`
+![image](https://user-images.githubusercontent.com/54159303/183357877-750baebb-7e24-4587-a71c-b46cc995dc3e.png)
+
+#### Limit VM Resources
+You will want to limit the disk image size that Docker Desktop can use.
+Then click `Apply & Restart` and confirm the resize action.
+![image](https://user-images.githubusercontent.com/54159303/183358297-b3e308b9-a537-4d1f-84d8-0fc9ba5278a3.png)
+
+#### Install Extensions
+Install the `Disk Usage` and `Logs Explorer` extensions.
+![image](https://user-images.githubusercontent.com/54159303/183358628-88bc5c13-da07-4773-a0b3-a56366589ce1.png)
+
+
 You should then manually update the font configuration for the following applications.
 ### VS Code
 Set the font for the editor and built-in terminal to `'FiraCode Nerd Font', Menlo, Monaco, 'Courier New', monospace`
@@ -53,3 +68,4 @@ Set the font to `Fira Code Regular Nerd Font Complete 11`
 ### iTerm2
 Set the font to `FiraCode Nerd Font Regular 12`
 ![image](https://user-images.githubusercontent.com/54159303/182966262-7cfaab92-ad83-40dc-881e-48731fc0bb80.png)
+
