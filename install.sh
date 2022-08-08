@@ -35,16 +35,13 @@ brew install --cask font-fira-code-nerd-font
 
 # Install Utils
 brew install wget htop ncdu hyperfine
-brew install --cask visual-studio-code gitkraken iterm2 phpstorm tableplus
+brew install --cask visual-studio-code gitkraken iterm2 phpstorm
 
 # Install PHP
 brew install php@7.4 php@8.0 php@8.1
 
 # Install Composer
 brew install composer
-
-# Install Memcached & Redis
-brew install memcached redis
 
 # Install WP CLI
 brew install wp-cli
@@ -83,6 +80,7 @@ fi
 
 # Install MailHog
 brew install mailhog
+brew services restart mailhog
 
 # Finished
 echo "Installed MailHog: http://localhost:8025"

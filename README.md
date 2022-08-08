@@ -5,32 +5,25 @@
 - Disable preinstalled Apache in Mac OS
 - Install Homebrew
 - Install Starship (ZSH)
-- Install PHP 7.4, 8.0 & 8.1
-- Install Composer
-- Install PNPM, NPM, YARN
-- Install NVM (Default to NPM LTS)
+- Install Dnsmasq
+- Install NGINX
+- Install PHP (Including FPM) 7.4, 8.0, 8.1 & Composer
+- Install PNPM, NPM, YARN & NVM (Default to NPM LTS)
 - Install FiraCode Nerd Font
-- Install Wget
-- Install Htop
-- Install NCDU
-- Install Hyperfine
-- Install visual-studio-code
-- Install gitkraken
-- Install iterm2
-- Install phpstorm
-- Install tableplus
-- Install memcached
-- Install redis
+- Install Wget, htop, ncdu (NCurses Disk Usage) cli tools
+- Install Hyperfine benchmark cli
+- Install Visual Studio Code, PhpStorm
+- Install GitKraken
+- Install iTerm2
+- Install laravel/installer, statamic/cli
 - Install wp-cli
-- Install laravel/installer
-- Install statamic/cli
 - Install friendsofphp/php-cs-fixer
 - Install laravel/valet
-- Install mariadb
+- Install MariaDB
 - Set MariaDB root password to blank/empty
 - Create Sites directory in Users Home folder
-- Install phpmyadmin
-- Install mailhog
+- Install [phpMyAdmin](https://phpmyadmin.test/)
+- Install [MailHog](http://localhost:8025/)
 
 ## Installation
 
