@@ -8,7 +8,7 @@
 - Install Dnsmasq
 - Install [NGINX](https://docs.nginx.com/)
 - Install PHP (Including FPM) 7.4, 8.0, 8.1 & [Composer](https://getcomposer.org/)
-- Install [PnPM](https://pnpm.io/motivation), [npm cli](https://docs.npmjs.com/), [Yarn](https://yarnpkg.com/getting-started) & [nvm[(https://github.com/nvm-sh/nvm) (Default to npm LTS)
+- Install [PnPM](https://pnpm.io/motivation), [npm cli](https://docs.npmjs.com/), [Yarn](https://yarnpkg.com/getting-started) & [nvm](https://github.com/nvm-sh/nvm) (Default to npm LTS)
 - Install [FiraCode Nerd Font](https://github.com/ryanoasis/nerd-fonts/tree/master/patched-fonts/FiraCode)
 - Install Wget, [htop](https://github.com/htop-dev/htop), ncdu (NCurses Disk Usage) cli tools
 - Install [Hyperfine](https://github.com/sharkdp/hyperfine) benchmark cli
@@ -17,7 +17,7 @@
 - Install iTerm2
 - Install [Laravel Installer](https://laravel.com/docs/8.x#the-laravel-installer), [Statamic CLI](https://statamic.dev/installing/local#install-statamic)
 - Install [WP-CLI](https://wp-cli.org/)
-- Install [PHP-CS-Fixer](https://github.com/FriendsOfPHP/PHP-CS-Fixer)
+- Install [PHP-CS-Fixer](https://github.com/FriendsOfPHP/PHP-CS-Fixer) and provide `phpfmt` as a CLI helper to automatically use these [defaults](https://github.com/michaelr0/dev-env/blob/main/php-cs-fixer.dist.php)
 - Install [Laravel Valet](https://laravel.com/docs/9.x/valet)
 - Install [Docker Desktop](https://www.docker.com/products/docker-desktop/)
 - Install MariaDB
@@ -25,6 +25,8 @@
 - Create Sites directory in Users Home folder
 - Install [phpMyAdmin](https://phpmyadmin.test/)
 - Install [MailHog](http://localhost:8025/)
+- Provide CLI helpers for [PHP-CS-Fixer](https://github.com/FriendsOfPHP/PHP-CS-Fixer) as phpfmt, [PHPUnit](https://phpunit.readthedocs.io/en/9.5/) and [Laravel Sail](https://laravel.com/docs/9.x/sail)
+- Provide PHP-CS-Fixer [defaults](https://github.com/michaelr0/dev-env/blob/main/php-cs-fixer.dist.php) which are a modified [PSR12](https://cs.symfony.com/doc/ruleSets/PSR12.html) ruleset
 
 ## Installation
 
@@ -60,6 +62,10 @@ You should then manually update the font configuration for the following applica
 Set the font for the editor and built-in terminal to `'FiraCode Nerd Font', Menlo, Monaco, 'Courier New', monospace`
 ![image](https://user-images.githubusercontent.com/54159303/183346814-470232bf-6ce7-49ca-a8cc-396622eaca7e.png)
 ![image](https://user-images.githubusercontent.com/54159303/183346758-ffea5736-3f03-4177-9d00-5246bf29cc58.png)
+
+### PhpStorm
+Set the font for the editor to `FiraCode Nerd Font 13`
+![image](https://user-images.githubusercontent.com/54159303/183359281-06f61b9f-95fa-476b-9dab-6d282c0a3dd3.png)
 
 ### Mac OS Terminal
 Set the font to `Fira Code Regular Nerd Font Complete 11`
