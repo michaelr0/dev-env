@@ -8,7 +8,7 @@
 - Install Dnsmasq
 - Install [NGINX](https://docs.nginx.com/)
 - Install PHP (Including FPM) 7.4, 8.0, 8.1 & [Composer](https://getcomposer.org/)
-- Install [PnPM](https://pnpm.io/motivation), [npm cli](https://docs.npmjs.com/), [Yarn](https://yarnpkg.com/getting-started) & [nvm[(https://github.com/nvm-sh/nvm) (Default to npm LTS)
+- Install [PnPM](https://pnpm.io/motivation), [npm cli](https://docs.npmjs.com/), [Yarn](https://yarnpkg.com/getting-started) & [nvm](https://github.com/nvm-sh/nvm) (Default to npm LTS)
 - Install [FiraCode Nerd Font](https://github.com/ryanoasis/nerd-fonts/tree/master/patched-fonts/FiraCode)
 - Install Wget, [htop](https://github.com/htop-dev/htop), ncdu (NCurses Disk Usage) cli tools
 - Install [Hyperfine](https://github.com/sharkdp/hyperfine) benchmark cli
