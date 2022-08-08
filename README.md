@@ -12,7 +12,8 @@ cd "$HOME/dev-env"
 
 ## FiraCode Nerd Font
 ### VS Code
-![image](https://user-images.githubusercontent.com/54159303/182965931-962249d3-a3ce-443c-a815-297fced4d92a.png)
+![image](https://user-images.githubusercontent.com/54159303/183346814-470232bf-6ce7-49ca-a8cc-396622eaca7e.png)
+![image](https://user-images.githubusercontent.com/54159303/183346758-ffea5736-3f03-4177-9d00-5246bf29cc58.png)
 
 ### Mac OS Terminal
 ![image](https://user-images.githubusercontent.com/54159303/182966469-ccfe31ea-b28e-4a3b-804c-d52a73241b65.png)
