@@ -2,23 +2,23 @@
 
 `install.sh` will do the following:
 
-- Disable preinstalled Apache in Mac OS
-- Install Homebrew
-- Install Starship (ZSH)
+- [Disable preinstalled Apache in Mac OS](https://apple.stackexchange.com/questions/119674/disable-apache-autostart)
+- Install [Homebrew](https://brew.sh/)
+- Install [Starship](https://starship.rs/) (ZSH)
 - Install Dnsmasq
-- Install NGINX
-- Install PHP (Including FPM) 7.4, 8.0, 8.1 & Composer
-- Install PNPM, NPM, YARN & NVM (Default to NPM LTS)
-- Install FiraCode Nerd Font
-- Install Wget, htop, ncdu (NCurses Disk Usage) cli tools
-- Install Hyperfine benchmark cli
+- Install [NGINX](https://docs.nginx.com/)
+- Install PHP (Including FPM) 7.4, 8.0, 8.1 & [Composer](https://getcomposer.org/)
+- Install [PnPM](https://pnpm.io/motivation), [npm cli](https://docs.npmjs.com/), [Yarn](https://yarnpkg.com/getting-started) & [nvm[(https://github.com/nvm-sh/nvm) (Default to npm LTS)
+- Install [FiraCode Nerd Font](https://github.com/ryanoasis/nerd-fonts/tree/master/patched-fonts/FiraCode)
+- Install Wget, [htop](https://github.com/htop-dev/htop), ncdu (NCurses Disk Usage) cli tools
+- Install [Hyperfine](https://github.com/sharkdp/hyperfine) benchmark cli
 - Install Visual Studio Code, PhpStorm
 - Install GitKraken
 - Install iTerm2
-- Install laravel/installer, statamic/cli
-- Install wp-cli
-- Install friendsofphp/php-cs-fixer
-- Install laravel/valet
+- Install [Laravel Installer](https://laravel.com/docs/8.x#the-laravel-installer), [Statamic CLI](https://statamic.dev/installing/local#install-statamic)
+- Install [WP-CLI](https://wp-cli.org/)
+- Install [PHP-CS-Fixer](https://github.com/FriendsOfPHP/PHP-CS-Fixer)
+- Install [Laravel Valet](https://laravel.com/docs/9.x/valet)
 - Install MariaDB
 - Set MariaDB root password to blank/empty
 - Create Sites directory in Users Home folder
