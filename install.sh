@@ -16,11 +16,11 @@ cp "zsh/zprofile.zsh" "$HOME/.zprofile"
 
 # Install Starship
 brew install starship
-cp "starship.toml" "$HOME/.config/starship.toml"
+cp "config/starship.toml" "$HOME/.config/starship.toml"
 
 # Install PNPM, NPM, YARN
 brew install pnpm npm yarn
-curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.1/install.sh | zsh
+curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/HEAD/install.sh | zsh
 
 # Load ZSH
 source "$HOME/.zprofile"
@@ -30,7 +30,8 @@ source "$HOME/.zshrc"
 nvm install --lts
 
 # Install fonts
-brew tap homebrew/cask-fonts && brew install --cask font-fira-code-nerd-font
+brew tap homebrew/cask-fonts
+brew install --cask font-fira-code-nerd-font
 
 # Install Utils
 brew install wget htop ncdu hyperfine
@@ -74,7 +75,7 @@ mkdir -p "$HOME/Sites"
 # Install phpMyAdmin
 if [ ! -d "$HOME/Sites/phpmyadmin" ]; then
     composer create-project phpmyadmin/phpmyadmin --repository-url=https://www.phpmyadmin.net/packages.json --no-dev "$HOME/Sites/phpmyadmin"
-    cp "phpmyadmin/config.inc.php" "$HOME/Sites/phpmyadmin/config.inc.php"
+    cp "config/phpmyadmin.php" "$HOME/Sites/phpmyadmin/config.inc.php"
 
     cd "$HOME/Sites/phpmyadmin"
     valet link phpmyadmin --secure
