@@ -64,6 +64,10 @@ valet install
 valet trust
 valet start
 
+# Install MailHog
+brew install mailhog
+brew services restart mailhog
+
 # Install MariaDB
 brew install mariadb
 brew services restart mariadb
@@ -81,11 +85,8 @@ if [ ! -d "$HOME/Sites/phpmyadmin" ]; then
     valet link phpmyadmin --secure
 fi
 
-# Install MailHog
-brew install mailhog
-brew services restart mailhog
-
 # Finished
+cd "$HOME/Sites"
 echo "Installed MailHog: http://localhost:8025"
 echo "MailHog SMTP: localhost:1025"
 echo "\r\n"
