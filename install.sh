@@ -37,6 +37,9 @@ brew install --cask font-fira-code-nerd-font
 brew install wget htop ncdu hyperfine
 brew install --cask visual-studio-code gitkraken iterm2 phpstorm
 
+# Install Docker Desktop
+brew install --cask docker
+
 # Install PHP
 brew install php@7.4 php@8.0 php@8.1
 

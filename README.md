@@ -19,6 +19,7 @@
 - Install [WP-CLI](https://wp-cli.org/)
 - Install [PHP-CS-Fixer](https://github.com/FriendsOfPHP/PHP-CS-Fixer)
 - Install [Laravel Valet](https://laravel.com/docs/9.x/valet)
+- Install [Docker Desktop](https://www.docker.com/products/docker-desktop/)
 - Install MariaDB
 - Set MariaDB root password to blank/empty
 - Create Sites directory in Users Home folder
