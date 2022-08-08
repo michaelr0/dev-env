@@ -6,6 +6,11 @@ if [ -f "$HOME/dev-env/zsh/functions.zsh" ]; then
     source "$HOME/dev-env/zsh/functions.zsh"
 fi
 
+# Aliases
+if [ -f "$HOME/dev-env/zsh/aliases.zsh" ]; then
+    source "$HOME/dev-env/zsh/aliases.zsh"
+fi
+
 # Completion
 autoload -Uz compinit
 compinit
