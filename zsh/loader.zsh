@@ -1,14 +1,16 @@
+# Aliases
+if [ -f "$HOME/dev-env/zsh/aliases.zsh" ]; then
+    source "$HOME/dev-env/zsh/aliases.zsh"
+fi
+
 # Exports
-export EDITOR='nano'
+if [ -f "$HOME/dev-env/zsh/exports.zsh" ]; then
+    source "$HOME/dev-env/zsh/exports.zsh"
+fi
 
 # Functions
 if [ -f "$HOME/dev-env/zsh/functions.zsh" ]; then
     source "$HOME/dev-env/zsh/functions.zsh"
-fi
-
-# Aliases
-if [ -f "$HOME/dev-env/zsh/aliases.zsh" ]; then
-    source "$HOME/dev-env/zsh/aliases.zsh"
 fi
 
 # Completion

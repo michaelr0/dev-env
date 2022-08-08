@@ -44,3 +44,8 @@ function sail() {
         echo "Laravel Sail not found!"
     fi
 }
+
+# Functions
+if [ -f "$HOME/.functions.zsh" ]; then
+    source "$HOME/.functions.zsh"
+fi
