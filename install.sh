@@ -4,6 +4,10 @@
 sudo apachectl stop
 sudo launchctl unload "/System/Library/LaunchDaemons/org.apache.httpd.plist" 2>/dev/null
 
+# Load Git Modules
+git submodule init
+git submodule update
+
 # Install Homebrew
 /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
 

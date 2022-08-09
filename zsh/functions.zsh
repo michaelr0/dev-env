@@ -1,6 +1,6 @@
 # dev-env update
 function devenv-update() {
-    zsh -c "cd $HOME/dev-env && git pull"
+    zsh -c "cd $HOME/dev-env && git pull && git submodule update"
 }
 
 # php-cs-fixer fix command with config automatically applied
