@@ -15,8 +15,8 @@ git submodule update
 mkdir -p "$HOME/.composer/vendor/bin"
 
 # Setup ZSH
-cp "zsh/zshrc.zsh" "$HOME/.zshrc"
-cp "zsh/zprofile.zsh" "$HOME/.zprofile"
+echo '[ -f "$HOME/dev-env/zsh/zprofile.loader.zsh" ] && source "$HOME/dev-env/zsh/zprofile.loader.zsh"' >> "$HOME/.zprofile"
+echo '[ -f "$HOME/dev-env/zsh/zsh.loader.zsh" ] && source "$HOME/dev-env/zsh/zsh.loader.zsh"' >> "$HOME/.zsh"
 
 # Install Starship
 brew install starship
