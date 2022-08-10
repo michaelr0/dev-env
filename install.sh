@@ -76,6 +76,8 @@ brew services restart mailhog
 brew install mariadb
 brew services restart mariadb
 mysql -e "SET PASSWORD FOR 'root'@'localhost' = '';"
+brew services restart mariadb
+mysql -e "DROP DATABASE IF EXISTS test;"
 
 # Create Sites Directory
 mkdir -p "$HOME/Sites"
@@ -87,6 +89,11 @@ if [ ! -d "$HOME/Sites/phpmyadmin" ]; then
 
     cd "$HOME/Sites/phpmyadmin"
     valet link phpmyadmin --secure
+
+    # mysql -e "CREATE DATABASE IF NOT EXISTS phpmyadmin DEFAULT CHARACTER SET = 'utf8' COLLATE = 'utf8_bin';"
+    # mysql -uroot phpmyadmin < "$HOME/Sites/phpmyadmin/sql/create_tables.sql"
+
+    mysql -e "$(cat $HOME/Sites/phpmyadmin/sql/create_tables.sql)"
 fi
 
 # Finished
