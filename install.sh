@@ -16,7 +16,7 @@ mkdir -p "$HOME/.composer/vendor/bin"
 
 # Setup ZSH
 echo '[ -f "$HOME/dev-env/zsh/zprofile.loader.zsh" ] && source "$HOME/dev-env/zsh/zprofile.loader.zsh"' >> "$HOME/.zprofile"
-echo '[ -f "$HOME/dev-env/zsh/zsh.loader.zsh" ] && source "$HOME/dev-env/zsh/zsh.loader.zsh"' >> "$HOME/.zsh"
+echo '[ -f "$HOME/dev-env/zsh/zsh.loader.zsh" ] && source "$HOME/dev-env/zsh/zsh.loader.zsh"' >> "$HOME/.zshrc"
 
 # Install Starship
 brew install starship
