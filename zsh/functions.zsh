@@ -50,6 +50,39 @@ function sail() {
     fi
 }
 
+# PHP 7.4
+function php74() {
+    EXEC_BIN="$HOMEBREW_PREFIX/opt/php@7.4/bin/php"
+
+    if [ -x "$EXEC_BIN" ]; then
+        $EXEC_BIN $@
+    else
+        echo "$EXEC_BIN not found!"
+    fi
+}
+
+# PHP 8.0
+function php80() {
+    EXEC_BIN="$HOMEBREW_PREFIX/opt/php@8.0/bin/php"
+
+    if [ -x "$EXEC_BIN" ]; then
+        $EXEC_BIN $@
+    else
+        echo "$EXEC_BIN not found!"
+    fi
+}
+
+# PHP 8.1
+function php81() {
+    EXEC_BIN="$HOMEBREW_PREFIX/opt/php@8.1/bin/php"
+
+    if [ -x "$EXEC_BIN" ]; then
+        $EXEC_BIN $@
+    else
+        echo "$EXEC_BIN not found!"
+    fi
+}
+
 # Functions
 if [ -f "$HOME/.functions.zsh" ]; then
     source "$HOME/.functions.zsh"
