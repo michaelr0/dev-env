@@ -47,6 +47,10 @@ cd "$HOME/dev-env"
 Click `ok` then enter your password and click `Install Helper`
 ![image](https://user-images.githubusercontent.com/54159303/183357877-750baebb-7e24-4587-a71c-b46cc995dc3e.png)
 
+#### Enable Big Sur virtualization framework and VirtioFS IO
+You will want to enable the Big Sur virtualization framework and VirtioFS accelerated directory sharing functionality. Then click Apply & Restart and confirm the resize action.
+![image](https://user-images.githubusercontent.com/54159303/184080387-239a278a-0a77-483f-ac9c-cd9396cbeeb2.png)
+
 #### Limit VM Resources
 You will want to limit the disk image size that Docker Desktop can use.
 Then click `Apply & Restart` and confirm the resize action.
