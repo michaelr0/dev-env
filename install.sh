@@ -18,6 +18,10 @@ mkdir -p "$HOME/.composer/vendor/bin"
 echo '[ -f "$HOME/dev-env/zsh/zprofile.loader.zsh" ] && source "$HOME/dev-env/zsh/zprofile.loader.zsh"' >> "$HOME/.zprofile"
 echo '[ -f "$HOME/dev-env/zsh/zsh.loader.zsh" ] && source "$HOME/dev-env/zsh/zsh.loader.zsh"' >> "$HOME/.zshrc"
 
+# Load ZSH
+source "$HOME/.zprofile"
+source "$HOME/.zshrc"
+
 # Install Starship
 brew install starship
 cp "config/starship.toml" "$HOME/.config/starship.toml"
@@ -26,7 +30,7 @@ cp "config/starship.toml" "$HOME/.config/starship.toml"
 brew install pnpm npm yarn
 curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/HEAD/install.sh | zsh
 
-# Load ZSH
+# Reload ZSH
 source "$HOME/.zprofile"
 source "$HOME/.zshrc"
 
