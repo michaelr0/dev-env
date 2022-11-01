@@ -1,5 +1,8 @@
 #!/bin/zsh
 
+# Install Rosetta 2
+/usr/sbin/softwareupdate --install-rosetta --agree-to-license
+
 # Disable default Mac OS Apache
 sudo apachectl stop
 sudo launchctl unload "/System/Library/LaunchDaemons/org.apache.httpd.plist" 2>/dev/null

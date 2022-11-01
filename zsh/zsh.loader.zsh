@@ -1,3 +1,8 @@
+# Load .zprofile if not loaded
+if [[ ! -v BREW ]]; then
+    source "$HOME/.zprofile"
+fi
+
 # Aliases
 if [ -f "$HOME/dev-env/zsh/aliases.zsh" ]; then
     source "$HOME/dev-env/zsh/aliases.zsh"
@@ -13,13 +18,19 @@ if [ -f "$HOME/dev-env/zsh/functions.zsh" ]; then
     source "$HOME/dev-env/zsh/functions.zsh"
 fi
 
-# Completion
-autoload -Uz compinit
-compinit
+if [[ -o interactive ]]; then
+    if [ -f "$HOME/dev-env/zsh/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh" ]; then
+        source "$HOME/dev-env/zsh/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh"
+    fi
 
-# Starship
-if [ -x "$(which starship)" ]; then
-    eval "$(starship init zsh)"
+    # Completion
+    autoload -Uz compinit
+    compinit
+
+    # Starship
+    if [ -x "$(which starship)" ]; then
+        eval "$(starship init zsh)"
+    fi
 fi
 
 # NVM

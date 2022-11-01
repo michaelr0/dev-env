@@ -20,8 +20,3 @@ if [ -d "$HOME/Library/pnpm" ]; then
     export PNPM_HOME="$HOME/Library/pnpm"
     export PATH="$PNPM_HOME:$PATH"
 fi
-
-# Plugins
-if [ -f "$HOME/dev-env/zsh/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh" ]; then
-    source "$HOME/dev-env/zsh/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh"
-fi
