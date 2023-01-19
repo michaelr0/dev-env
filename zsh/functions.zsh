@@ -50,38 +50,18 @@ function sail() {
     fi
 }
 
-# PHP 7.4
-function php74() {
-    EXEC_BIN="$HOMEBREW_PREFIX/opt/php@7.4/bin/php"
+PHP_VERSIONS=(7.4 8.0 8.1 8.2)
 
-    if [ -x "$EXEC_BIN" ]; then
-        $EXEC_BIN $@
-    else
-        echo "$EXEC_BIN not found!"
+for PHP_VER in $PHP_VERSIONS
+do
+    if [ -x "${HOMEBREW_PREFIX}/opt/php@${PHP_VER}/bin/php" ]; then
+        alias "php${PHP_VER//./}"="${HOMEBREW_PREFIX}/opt/php@${PHP_VER}/bin/php"
+
+        if [ -x "${HOMEBREW_PREFIX}/bin/composer" ]; then
+            alias "composer${PHP_VER//./}"="php${PHP_VER//./} ${HOMEBREW_PREFIX}/bin/composer"
+        fi
     fi
-}
-
-# PHP 8.0
-function php80() {
-    EXEC_BIN="$HOMEBREW_PREFIX/opt/php@8.0/bin/php"
-
-    if [ -x "$EXEC_BIN" ]; then
-        $EXEC_BIN $@
-    else
-        echo "$EXEC_BIN not found!"
-    fi
-}
-
-# PHP 8.1
-function php81() {
-    EXEC_BIN="$HOMEBREW_PREFIX/opt/php@8.1/bin/php"
-
-    if [ -x "$EXEC_BIN" ]; then
-        $EXEC_BIN $@
-    else
-        echo "$EXEC_BIN not found!"
-    fi
-}
+done
 
 # Functions
 if [ -f "$HOME/.functions.zsh" ]; then
